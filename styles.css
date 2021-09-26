@@ -1,0 +1,63 @@
+/* NOTE: I have only tested this on browsers Chrome and Explorer, I would have tested on Mozilla but that browser has stopped working altogether on my computer :( So I don't know if this looks the way it should on any other browser */
+/* I apologize in advance if I am not explaining things well enough as English is not my first language and I may be making some word or grammatical mistakes */ 
+
+/* BODY - Font: */
+body {font-family: 'ABeeZee', 'Arial Narrow', Arial, sans-serif;} /* Setting text font stack for all text: */
+
+/* IMAGE: */
+img {border-radius: 10px;} /* Setting a border radius to make image corners round-ish :) */
+
+/* HEADING 3 - Animal Name: */
+h3 {
+    color: rgb(255, 151, 55); /* Setting Heading style to be a little funky by making it orange to match background and the warm cat hues */
+    text-shadow: 2px 2px 2px black; /* Giving it a shadow so it sticks out from background (and it also looks cooler!) */ 
+}
+
+/* LIST ITEMS: */
+li {
+    list-style-type: none; /* Removing dots as requested */
+    margin-left: -2em; /* Moving list items to the left so they are at the same height as the other blocks of text (not sure if this was required to be done like the prototype) */
+  }
+
+/* LIST ITEMS - Bold: */
+li strong {text-shadow: 1px 0px 5px white;} /* Giving the bold list item text a slightly different text shadow to stick out from background, 1px horizontally so the whole shadow sticks out slightly more than the rest of the text */
+
+/* NORMAL LIST ITEMS TEXT AND OTHER INFO TEXT: */
+p, ul { /* I experimented a bit with how I can assign multiple selectors to the same rules and this way of writing it seems to work aside from making sense intuitively */
+    width: 280px; /* Setting all text to be only as much as 280px wide */
+    margin: auto; /* I wasn't sure how to best center text block elements with regards to each other and with some googling found this which seems to work */
+    margin-top: 0.5em; /* Adjusting margin on top part of text blocks */
+    margin-bottom: 0.5em; /* Adjusting margin below text blocks so its symmetrical to above */
+    color: black; 
+    text-shadow: 0px 0px 5px #fcfcfc; /* Text shadow again so all text sticks out more from background with a white shadow (so there's contrast to black text color) */
+    font-size: 90%; /* Made all text a little smaller because I liked it better visually */
+}
+
+/* card CLASS: */
+/* Class "card" refers to the entire body of the card, from outline and box shadow to all info and image contained within it. */
+.card {
+    width: 300px; /* Making it 300px excluding spacing */
+    margin: auto; /* Using auto margin for better centering of elements in relation to each other */
+    padding: 1.5em; /* Adjusting the spacing */
+    padding-top: 0.1em; /* Adjusting margin on top part of the card to not extend too much beyond animal name */
+    padding-bottom: 0.1em; /* Adjusting card bottom to not extend too much and to be approximately same space as card top (same space as whats above animal name) */
+    box-shadow: 7px 7px 5px rgb(182, 183, 184); /* Adding card (box) shadow */
+    background-image: url(paws.jpg); /* I wanted to make the card prettier by using a background image */
+    border: 1px solid rgb(160, 160, 160); /* Adding border around card as requested */
+    border-radius: 10px; /* Making border corners round-ish like image edges */
+    background-color: rgba(255, 201, 165, 1); /* Background image wouldn't load on internet explorer ( :( ) so I'm using a background color as a failsafe, not sure if this is the best way to do this */
+}
+
+/* info CLASS: */
+/* Class "info" refers to the text information about the animal (enclosed in a border), including interesting fact, list and description. */
+.info {
+    border: 1px solid rgb(160, 160, 160); /* Adding border around info as requested */
+    border-radius: 10px; /* Making corners round-ish to match with the other rounded corners */
+    margin-top: 1em; /* Adjusting margin at the top of info block */
+    margin-bottom: 1em; /* Adjusting margin at the bottom of info block symmetrically */
+    width: 300px;  /* Making entire block same width as image like in the prototype */
+    background-color: rgba(231, 77, 49, 0.5); /* Added a translucent colored background for the info block so that the text on top sticks out more on a more consistent background color than background image, and also because I thought it'd look pretty to add more color */
+}
+
+/* INTERESTING FACT: */
+.info em {font-size: 90%;} /* Made interesting fact text 10% smaller than other text to save space and because I thought it was more fitting visually */
